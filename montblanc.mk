@@ -42,8 +42,7 @@ PRODUCT_COPY_FILES += \
         device/sony/montblanc-common/config/hostapd.conf:system/etc/wifi/hostapd.conf \
         device/sony/montblanc-common/config/01stesetup:system/etc/init.d/01stesetup \
         device/sony/montblanc-common/config/10wireless:system/etc/init.d/10wireless \
-        device/sony/montblanc-common/config/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
-        device/sony/montblanc-common/config/dhcpcd.conf:system/etc/dhcpcd/dhcpcd.conf
+        device/sony/montblanc-common/config/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf 
         
 
 # Filesystem management tools
@@ -100,8 +99,7 @@ PRODUCT_COPY_FILES += \
         device/sony/montblanc-common/config/init.rc:root/init.rc \
         device/sony/montblanc-common/config/init.environ.rc:root/init.environ.rc \
         device/sony/montblanc-common/config/init.st-ericsson.rc:root/init.st-ericsson.rc \
-        device/sony/montblanc-common/config/ueventd.st-ericsson.rc:root/ueventd.st-ericsson.rc \
-        external/koush/Superuser/init.superuser.rc:root/init.superuser.rc
+        device/sony/montblanc-common/config/ueventd.st-ericsson.rc:root/ueventd.st-ericsson.rc 
 
 # Post recovery script
 PRODUCT_COPY_FILES += \
