@@ -19,8 +19,8 @@ import common
 def Thanks(self):
 	self.script.AppendExtra('ui_print("===========================================");')
 	self.script.AppendExtra('ui_print("    Author : Aosx Team :");')
-	self.script.AppendExtra('ui_print("    Thanks :");')
 	self.script.AppendExtra('ui_print("    and SlimKatXperia Team");')
+	self.script.AppendExtra('ui_print("    Thanks :");')
 	self.script.AppendExtra('ui_print("===========================================");')
 
 def FullOTA_Assertions(self):
