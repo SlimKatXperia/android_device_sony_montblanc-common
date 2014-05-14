@@ -5,7 +5,6 @@ TARGET_BOOTLOADER_BOARD_NAME := montblanc
 TARGET_NO_BOOTLOADER := true
 TARGET_NO_RADIOIMAGE := true
 TARGET_SPECIFIC_HEADER_PATH := device/sony/montblanc-common/include
-TARGET_SPECIFIC_HEADER_PATH += device/sony/montblanc-common/hardware
 TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/devices/platform/musb-ux500.0/musb-hdrc/gadget/lun%d/file"
 COMMON_GLOBAL_CFLAGS += -DSTE_HARDWARE
 BOARD_USES_STE_HARDWARE := true
@@ -74,6 +73,7 @@ TARGET_PROVIDES_LIBLIGHTS := true
 BOARD_CUSTOM_BOOTIMG_MK := device/sony/montblanc-common/custombootimg.mk
 TARGET_PROVIDES_INIT_RC := true
 TARGET_RELEASETOOL_OTA_FROM_TARGET_SCRIPT := device/sony/montblanc-common/releasetools/semc_ota_from_target_files
+TARGET_RELEASETOOLS_EXTENSIONS := device/sony/montblanc-common/releasetools
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 0x01000000

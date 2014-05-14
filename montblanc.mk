@@ -69,6 +69,9 @@ PRODUCT_PACKAGES += \
       regulatory.bin \
       linville.key.pub.pem
 
+# Crda Config ,need ?
+PRODUCT_COPY_FILES += \
+        device/sony/montblanc-common/config/regulatory.rules:system/etc/udev/rules.d/85-regulatory.rules \
 
 # Hostapd
 PRODUCT_PACKAGES += \
@@ -102,7 +105,14 @@ PRODUCT_PACKAGES += \
         avtest \
         libsbc \
         hciattach
-        
+
+ADDITIONAL_DEFAULT_PROPERTIES += \
+        ro.debuggable=1 \
+        ro.secure=0 \
+        ro.adb.secure=0 \
+        ro.allow.mock.location=0 \
+        persist.sys.usb.config=adb
+
 # Custom init scripts
 PRODUCT_COPY_FILES += \
         device/sony/montblanc-common/config/init.rc:root/init.rc \
