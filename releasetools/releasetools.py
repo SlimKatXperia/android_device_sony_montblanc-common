@@ -20,9 +20,7 @@ def Thanks(self):
 	self.script.AppendExtra('ui_print("===========================================");')
 	self.script.AppendExtra('ui_print("    Author : Aosx Team :");')
 	self.script.AppendExtra('ui_print("    Thanks :");')
-	self.script.AppendExtra('ui_print("    95A31,Abhinav1997,Agontuk,alwaysadeel");')
-	self.script.AppendExtra('ui_print("    Andrewas,DevSwift,percy-g2,wan5xp,");')
-	self.script.AppendExtra('ui_print("    XMelancholy,munjeni,FXP Team");')
+	self.script.AppendExtra('ui_print("    and SlimKatXperia Team");')
 	self.script.AppendExtra('ui_print("===========================================");')
 
 def FullOTA_Assertions(self):
