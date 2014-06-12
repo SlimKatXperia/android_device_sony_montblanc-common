@@ -19,6 +19,7 @@ TARGET_GLOBAL_CFLAGS += -mfpu=neon -mfloat-abi=softfp
 TARGET_GLOBAL_CPPFLAGS += -mfpu=neon -mfloat-abi=softfp
 TARGET_ARCH_VARIANT := armv7-a-neon
 ARCH_ARM_HAVE_TLS_REGISTER := true
+TARGET_RUNNING_WITHOUT_SYNC_FRAMEWORK := true
 
 # RIL implementation
 BOARD_RIL_CLASS := ../../../device/sony/montblanc-common/telephony-common/
