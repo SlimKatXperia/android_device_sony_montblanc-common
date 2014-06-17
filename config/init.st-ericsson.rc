@@ -92,6 +92,7 @@ on fs
 #    mount vfat /dev/block/mmcblk0p14 /sde  rw wait
 
     mount_all fstab.st-ericsson
+    swapon_all fstab.st-ericsson
 
     # SEMC: Start the TrimArea Daemon and early TA-users
     class_start trimarea
