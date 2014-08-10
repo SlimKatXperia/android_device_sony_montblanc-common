@@ -50,6 +50,9 @@ COMMON_GLOBAL_CFLAGS += -DUSES_TI_MAC80211 -DANDROID_P2P -DENABLE_STE_CHANGES
 COMMON_GLOBAL_CFLAGS += -DICS_CAMERA_BLOB
 USE_CAMERA_STUB := true
 
+# Dumpstate
+BOARD_LIB_DUMPSTATE := libdumpstate.montblanc
+
 # Graphics
 BOARD_EGL_CFG := device/sony/montblanc-common/config/egl.cfg
 BOARD_EGL_NEEDS_LEGACY_FB := true
