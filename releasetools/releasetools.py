@@ -18,11 +18,13 @@ import common
 
 def Thanks(self):
 	self.script.AppendExtra('ui_print("===========================================");')
-	self.script.AppendExtra('ui_print("    Author : Aosx Team :");')
-	self.script.AppendExtra('ui_print("    Thanks :");')
-	self.script.AppendExtra('ui_print("    95A31,Abhinav1997,Agontuk,alwaysadeel");')
-	self.script.AppendExtra('ui_print("    Andrewas,DevSwift,percy-g2,wan5xp,");')
-	self.script.AppendExtra('ui_print("    XMelancholy,munjeni,FXP Team");')
+	self.script.AppendExtra('ui_print("Author: AOSX Team (95A31, percy-g2, wan5xp,");')
+	self.script.AppendExtra('ui_print("        Agontuk, alwaysadeel, Abhinav1997, ");')
+	self.script.AppendExtra('ui_print("        DevSwift, Andrewas, XMelancholy)   ");')
+	self.script.AppendExtra('ui_print("                                           ");')
+	self.script.AppendExtra('ui_print("Sources: github.com/AndroidOpenSourceXperia");') 
+	self.script.AppendExtra('ui_print("                                           ");')
+	self.script.AppendExtra('ui_print("Thanks: munjeni, FXP Team, Canjica Team    ");')
 	self.script.AppendExtra('ui_print("===========================================");')
 
 def FullOTA_Assertions(self):
