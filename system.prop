@@ -13,7 +13,6 @@ persist.sys.bluetooth.handsfree=hfp_wbs
 # RIL configuration
 rild.libargs=-c UNIX -n 2 -p /dev/socket/at_core -s /dev/socket/at_core -i rmnet
 rild.libpath=/system/lib/libu300-ril.so
-ro.telephony.ril_class=SonyU8500RIL
 ro.telephony.call_ring.multiple=false
 
 # OpenGL ES API version (131072 = 2.0)
