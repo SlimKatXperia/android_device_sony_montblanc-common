@@ -554,6 +554,11 @@ on property:wlan.driver.status=unloaded
     write /sys/class/rfkill/rfkill0/state 0
 
 on property:init.svc.p2p_supplicant=stopped
+    exec /system/bin/netcfg wlan0 down
+    start initial_regdom
+
+on property:init.svc.p2p_supplicant=stopped
+    exec /system/bin/netcfg wlan0 up
     start initial_regdom
 
 on property:init.svc.wpa_supplicant=stopped
