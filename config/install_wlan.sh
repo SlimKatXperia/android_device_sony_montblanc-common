@@ -1,22 +1,9 @@
 #!/system/bin/sh
 
-MAC_FILE=/data/etc/wlan_macaddr
-COMMAND1="/system/bin/insmod"
-COMMAND2="/system/bin/iw"
-MOD_PATH="/system/lib/modules"
-MOD_CORE="cw1200_core.ko"
-MOD_WLAN="cw1200_wlan.ko"
-ARG="macaddr="
+# Load Wireless modules
+/system/bin/insmod /system/lib/modules/cw1200_core.ko macaddr=$(/system/bin/cat /data/etc/wlan_macaddr)
+/system/bin/insmod /system/lib/modules/cw1200_wlan.ko
 
-if ( /system/bin/ls $MAC_FILE > /dev/null ); then
-     ADDR=`/system/bin/cat $MAC_FILE`
-     echo $COMMAND1 $MOD_PATH/$MOD_CORE $ARG$ADDR
-     $COMMAND1 $MOD_PATH/$MOD_CORE $ARG$ADDR
-
-else
-     echo $COMMAND1 $MOD_PATH/$MOD_CORE
-     $COMMAND1 $MOD_PATH/$MOD_CORE
-fi
-
-echo $COMMAND1 $MOD_PATH/$MOD_WLAN
-$COMMAND1 $MOD_PATH/$MOD_WLAN
+# Create p2p0 interface
+/system/bin/iw phy phy0 interface add p2p0 type managed
+ifconfig p2p0 hw ether $(hexdump -n6 -e '1/1 ":%02X"' /dev/random | tail -c 17)
