@@ -37,10 +37,6 @@ PRODUCT_COPY_FILES += \
         frameworks/native/data/etc/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml \
         packages/wallpapers/LivePicker/android.software.live_wallpaper.xml:system/etc/permissions/android.software.live_wallpaper.xml
 
-# Wifi direct (test)
-PRODUCT_COPY_FILES += \
-        frameworks/native/data/etc/android.hardware.wifi.direct.xml:system/etc/permissions/android.hardware.wifi.direct.xml
-
 # Configuration files
 PRODUCT_COPY_FILES += \
         device/sony/montblanc-common/config/media_codecs.xml:system/etc/media_codecs.xml \
